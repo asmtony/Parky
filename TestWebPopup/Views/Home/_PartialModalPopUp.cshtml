@@ -1,0 +1,54 @@
+﻿<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                ×
+            </button>
+
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <input class="form-control" type="text"
+                           placeholder="Login Username" id="inputUserName" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Login Password"
+                           type="password" id="inputPassword" />
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary button button4">Sign</button>
+            <button type="button" id="btnHideModal2" onclick="hideWindow();" class="btn btn-primary button button4">
+                Close Me
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function hideWindow() {
+            console.log('btnHideModal2 Close me clicked');
+            // $("#loginModal2").close();
+            $("#loginModal2").modal('hide');
+        }
+    </script>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        /*
+        $("#btnHideModal2").click(function () {
+            
+            $("#loginModal2").modal('hide');
+            hideWindow();
+        });
+        */
+        
+        /*
+        $("#pg_menu_content").on('click', '#btnHideModal2', function () {
+            alert($(this).val());
+        });
+        */
+    });
+</script>

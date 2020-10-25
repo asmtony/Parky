@@ -1,18 +1,22 @@
+API Project
+	Packages installed to setup api
+	 Microsoft.EntityFrameworkCore - for EF Core
+	 Microsoft.EntityFrameworkCore.SqlServer - To use sql server with AF Core
+	 Microsoft.EntityFrameworkCore.Tools - needed for migrations
+	 AutoMapper
+	 AutoMapper.Extensions.Microsoft.DependencyInjection
+	Swagger Packages
+	  Swashbuckle.AspNetCore
+	Versioning
+	 Microsoft.AspNetCore.Mvc.Versioning
+	 Microsoft.AspNetCore.mvc.Versioning.ApiExplorer
 
-Packages installed to setup api
- Microsoft.EntityFrameworkCore - for EF Core
- Microsoft.EntityFrameworkCore.SqlServer - To use sql server with AF Core
- Microsoft.EntityFrameworkCore.Tools - needed for migrations
- AutoMapper
- AutoMapper.Extensions.Microsoft.DependencyInjection
-Swagger Packages
-  Swashbuckle.AspNetCore
-Versioning
- Microsoft.AspNetCore.Mvc.Versioning
- Microsoft.AspNetCore.mvc.Versioning.ApiExplorer
+	 Migration (needs Microsoft.EntityFrameworkCore.Tools)
+	  -- Inital create 
+	  add-migration AddNationalParkToDb
+	  update-database
 
- Migration (needs Microsoft.EntityFrameworkCore.Tools)
-  -- Inital create 
-  add-migration AddNationalParkToDb
-  update-database
+web project
+	// Razor runtime compilation
+	Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
 
